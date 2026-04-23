@@ -1,168 +1,271 @@
-<div style="background-color: #fcfcfc; padding: 20px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); font-family: 'Segoe UI', 'Helvetica Neue', sans-serif; color: #444; max-width: 100%; overflow-x: auto;">
-  
-  <h2 style="text-align: center; color: #ff9a9e; margin-bottom: 20px; font-size: 24px;">✨ Fórmulas de Administración Financiera ✨<br><span style="font-size: 16px; color: #888; font-weight: normal;"> Para las burras que no entienden como persona normal</span></h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Fórmulas | B-Finance</title>
+    <style>
+        :root {
+            --bg-color: #FAF8F5;
+            --card-bg: #FFFFFF;
+            --accent-arena: #D9C5B2;
+            --accent-dark: #8C7A6B;
+            --text-main: #4A4036;
+            --text-light: #8C7A6B;
+            --border-radius: 16px;
+        }
 
-  <table style="width: 100%; border-collapse: separate; border-spacing: 0; text-align: left; border-radius: 15px; overflow: hidden; border: 1px solid #f0f0f0;">
-    <thead>
-      <tr style="background-color: #ffb7b2; color: white; text-transform: uppercase; letter-spacing: 1px; font-size: 14px;">
-        <th style="padding: 15px; border-right: 1px solid white;">Categoría / Índice 🏷️</th>
-        <th style="padding: 15px; border-right: 1px solid white;">Fórmula Exacta 🧮</th>
-        <th style="padding: 15px; border-right: 1px solid white;">¿Qué significa? 🧠</th>
-        <th style="padding: 15px;">Ejemplo Fácil 🧸</th>
-      </tr>
-    </thead>
-    <tbody>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-      <tr style="background-color: #a8e6cf; color: #2d5a4c;">
-        <td colspan="4" style="padding: 12px; font-weight: bold; text-align: center; font-size: 16px;">💧 1. ÍNDICES DE LIQUIDEZ (¿Tengo plata hoy para pagar lo que debo?)</td>
-      </tr>
-      <tr style="background-color: #f4fbf8;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Liquidez Corriente</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Activo Corriente / Pasivo Corriente</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Mide si podés pagar tus deudas a corto plazo usando tus cosas de corto plazo.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Tenés 2 caramelos en el bolsillo y le debés 1 a tu hermano. 2 / 1 = 2. ¡Estás joya!</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Liquidez Ácida</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">(Activo Corriente - Bienes de Cambio) / Pasivo Corriente</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Igual al anterior, pero sacando el stock que todavía no vendiste.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">De esos 2 caramelos, 1 es un chupetín sin vender. Te queda 1 moneda real. 1 / 1 = 1. Apenas le pagás.</td>
-      </tr>
-      <tr style="background-color: #f4fbf8;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Liquidez Corto Plazo</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">(Caja y Bancos + Invers. transitorias) / Pasivo Corriente</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Mide si podés pagar ¡ya mismo! solo con el efectivo que tenés a mano.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Rompés el chanchito a ver cuántas monedas caen YA para darle a tu mamá.</td>
-      </tr>
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-      <tr style="background-color: #ffd3b6; color: #6b442a;">
-        <td colspan="4" style="padding: 12px; font-weight: bold; text-align: center; font-size: 16px;">⛓️ 2. ÍNDICES DE ENDEUDAMIENTO (¿De quién son mis cosas realmente?)</td>
-      </tr>
-      <tr style="background-color: #fff9f5;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Endeud. sobre Patrimonio</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Pasivo Total / Patrimonio Neto</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Compara cuánta plata de terceros usás versus la plata tuya.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">¿Compraste tus juguetes con tus ahorros o con la plata que te prestó la abuela?</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Endeud. sobre Activo Total</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Pasivo Total / Activo Total</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Indica qué porcentaje de TODO lo que tenés fue comprado con deuda.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">De todos los 10 juguetes de tu cuarto, ¿cuántos te fiaste del kiosco?</td>
-      </tr>
-      <tr style="background-color: #fff9f5;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Endeud. / Valor Mercado</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Pasivo Total / Capitalización Bursátil</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Compara la deuda con lo que la gente pagaría por tu empresa hoy.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Si tus amigos compraran tu puestito, ¿les alcanza para cubrir lo que debés?</td>
-      </tr>
+        .header h1 {
+            color: var(--text-main);
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
 
-      <tr style="background-color: #dcedc1; color: #4a5c2f;">
-        <td colspan="4" style="padding: 12px; font-weight: bold; text-align: center; font-size: 16px;">🛡️ 3. ÍNDICES DE COBERTURA (¿Me alcanza lo que gano para pagar impuestos/intereses?)</td>
-      </tr>
-      <tr style="background-color: #fbfdf7;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Cobertura de Intereses</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Flujo Efectivo Operativo / Intereses</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Evalúa si la plata que entra alcanza para pagar los intereses.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Ganás 3 monedas por vender, y el "impuesto" es 1. ¡Te sobra!</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Cobertura de Deuda</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Flujo Efectivo / (Intereses + Principal)</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Si te alcanza para pagar los intereses Y devolver lo que te prestaron.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Pagás 1 moneda de impuesto + 2 que tenés que devolver sí o sí.</td>
-      </tr>
-      <tr style="background-color: #fbfdf7;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Cobertura de Dividendos</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Utilidad Neta / Dividendos Pagados</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Si ganás suficiente para repartir plata a los dueños.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">¿Te sobró para regalarle un chupetín al amiguito que te ayudó?</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Cobertura Servicio Deuda</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">EBIT / (Intereses + Pagos Capital/(1-t))</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Prueba súper ácida: computa los impuestos (t) además del resto.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Pagar a mamá, devolver el préstamo Y la cuota del colegio. Modo Hard.</td>
-      </tr>
+        .header p {
+            color: var(--text-light);
+            font-size: 14px;
+            margin-top: 0;
+        }
 
-      <tr style="background-color: #fff6c9; color: #8a7a24;">
-        <td colspan="4" style="padding: 12px; font-weight: bold; text-align: center; font-size: 16px;">🏃‍♀️ 4. ÍNDICES DE ACTIVIDAD (¿Qué tan rápido muevo mis cosas?)</td>
-      </tr>
-      <tr style="background-color: #fffdf5;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Rotación de Cuentas a Cobrar</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Ventas / Cuentas a Cobrar</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Cuántas veces al año lográs cobrarle a los que te deben plata.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">¿Qué tan rápido obligás a tus amigos a pagarte los alfajores que les fiaste?</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Días de Cobranza</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">(Cuentas a Cobrar * 365) / Ventas</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Promedio de días que tardás en cobrar algo vendido.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Los días exactos que pasás rogando que te paguen.</td>
-      </tr>
-      <tr style="background-color: #fffdf5;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Rotación de Inventarios</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">CMV / Inventarios</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Cuántas veces al año renovás tooooda tu mercadería.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">¿Cuántas veces al mes se vacía tu frasco de galletas y lo volvés a llenar?</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Días de Pago</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">(Deudas comerciales * 365) / Compras</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Cuánto tardás VOS en pagarle a los proveedores.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Los días que te hacés la distraída antes de pagarle los limones al verdulero.</td>
-      </tr>
+        .table-container {
+            background: var(--card-bg);
+            border-radius: var(--border-radius);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+            width: 100%;
+            max-width: 1000px;
+            overflow-x: auto;
+            border-top: 6px solid var(--accent-arena);
+        }
 
-      <tr style="background-color: #e2d1f9; color: #4b3671;">
-        <td colspan="4" style="padding: 12px; font-weight: bold; text-align: center; font-size: 16px;">🚀 5. ÍNDICES DE RENTABILIDAD (¿Estoy ganando plata de verdad?)</td>
-      </tr>
-      <tr style="background-color: #faf7fd;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Fórmula General</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Resultado / Esfuerzo</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">La base de todo: cuánto rinde algo según lo que te costó.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Llorar 10 minutos (esfuerzo) para que te compren 2 alfajores (resultado).</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>ROA (Rentabilidad Activo)</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Beneficio Neto / Activos Totales</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Eficiencia con la que usás TODAS tus cosas para ganar plata.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Por cada juguete que tenés, ¿cuántos caramelos lograste hacer?</td>
-      </tr>
-      <tr style="background-color: #faf7fd;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>ROE (Rentabilidad Patrimonio)</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Beneficio Neto / Patrimonio Neto</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">La rentabilidad que se llevan los DUEÑOS por su plata puesta.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">De la plata de tu propio chanchito, ¿cuánta plata nueva lograste hacer?</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Identidad Du Pont</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">(Util Neta/Vtas) * (Vtas/Act) * (Act/Pat)</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Desarma el ROE para ver si ganás por vender caro, rápido o pedir prestado.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Un rayo láser para ver exactamente por qué sos la reina de la limonada.</td>
-      </tr>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+        }
 
-      <tr style="background-color: #c5d9ed; color: #2a415a;">
-        <td colspan="4" style="padding: 12px; font-weight: bold; text-align: center; font-size: 16px;">📈 6. ÍNDICES DE MERCADO (¿Cómo me ven los de afuera?)</td>
-      </tr>
-      <tr style="background-color: #f2f7fc;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Ganancia por acción (RxA)</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Util. Neta / Cant. Acciones Circulación</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Ganancia total dividida por los "papelitos" que tienen los dueños.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Tenés 100 golosinas y 4 amigos dueños. Cada uno se lleva 25.</td>
-      </tr>
-      <tr style="background-color: #ffffff;">
-        <td style="padding: 12px; border-bottom: 1px solid #eee;"><b>Payout (Tasa distribución)</b></td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee; font-family: monospace; color: #e83e8c;">Dividendos / Utilidad Neta</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Qué porcentaje de lo que ganaste se lo regalás a los dueños.</td>
-        <td style="padding: 12px; border-bottom: 1px solid #eee;">Ganaste 10 caramelos. Te comés 5 y los otros 5 los das a tus socios (50%).</td>
-      </tr>
-      <tr style="background-color: #f2f7fc;">
-        <td style="padding: 12px;"><b>Price Earning (P/E)</b></td>
-        <td style="padding: 12px; font-family: monospace; color: #e83e8c;">Precio acción / Ganancia acción</td>
-        <td style="padding: 12px;">Cuántas veces la gente paga tu ganancia hoy porque creen que vas a crecer.</td>
-        <td style="padding: 12px;">Tu puesto genera 1 peso, pero tus amigos te lo pagan 12 (esperan 12 años).</td>
-      </tr>
+        thead {
+            background-color: #fdfaf6;
+            border-bottom: 2px solid var(--accent-arena);
+        }
 
-    </tbody>
-  </table>
-</div>
+        th {
+            padding: 15px;
+            color: var(--accent-dark);
+            font-weight: bold;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-right: 1px solid #f0f0f0;
+        }
+
+        th:last-child { border-right: none; }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #f5f5f5;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        tr:hover { background-color: #fcfbf9; }
+
+        .category-row {
+            background-color: #f4efe9;
+            color: var(--accent-dark);
+            font-weight: bold;
+            text-align: center;
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .formula-text {
+            font-family: 'Courier New', Courier, monospace;
+            color: #7a6857;
+            background-color: #f9f7f4;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .emoji { font-size: 16px; margin-right: 5px; }
+        
+        .note { font-size: 11px; color: var(--text-light); display: block; margin-top: 5px; font-style: italic; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>B-FINANCE: LA TABLA DEFINITIVA ✨</h1>
+        <p>Todas las fórmulas de la cursada en crudo (U1 a C7)</p>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoría / Índice 🏷️</th>
+                    <th>Fórmula Exacta 🧮</th>
+                    <th>¿Qué significa? 🧠</th>
+                    <th>Ejemplo Modo Recreo 🧸</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr><td colspan="4" class="category-row">💧 1. Índices de Liquidez (U3)</td></tr>
+                <tr>
+                    <td><b>Liquidez Corriente</b></td>
+                    <td><span class="formula-text">Activo Corriente / Pasivo Corriente</span></td>
+                    <td>Mide si podés pagar tus deudas a corto plazo usando tus cosas de corto plazo.</td>
+                    <td><span class="emoji">🎒</span> Tenés 2 alfajores en la mochila y le debés 1 a tu hermano. ¡Te sobra para pagarle!</td>
+                </tr>
+                <tr>
+                    <td><b>Liquidez Ácida</b></td>
+                    <td><span class="formula-text">(Activo Corriente - Bienes de Cambio) / Pasivo Corriente</span></td>
+                    <td>Igual al anterior, pero sacando el stock que todavía no lograste vender.</td>
+                    <td><span class="emoji">🥶</span> De esos 2 alfajores, 1 es de fruta y nadie lo quiere. Solo tenés 1 vendible real. Apenas le pagás.</td>
+                </tr>
+
+                <tr><td colspan="4" class="category-row">🏃‍♀️ 2. Índices de Actividad / Ciclo (U3)</td></tr>
+                <tr>
+                    <td><b>Días de Cobranza</b></td>
+                    <td><span class="formula-text">(Cuentas a Cobrar * 365) / Ventas</span></td>
+                    <td>Promedio de días que tardás en cobrar algo que vendiste a crédito.</td>
+                    <td><span class="emoji">😭</span> Los días exactos que pasás rogando que te paguen el sándwich que fiaste.</td>
+                </tr>
+                <tr>
+                    <td><b>Días de Venta (Stock)</b></td>
+                    <td><span class="formula-text">(Inventarios * 365) / Costo de Mercadería (CMV)</span></td>
+                    <td>El tiempo promedio que tarda tu negocio en vender la mercadería del depósito.</td>
+                    <td><span class="emoji">🕷️</span> ¿Cuántos días se quedan las galletitas juntando telarañas en el frasco antes de que alguien se las coma?</td>
+                </tr>
+                <tr>
+                    <td><b>Días de Pago</b></td>
+                    <td><span class="formula-text">(Deudas Comerciales * 365) / Compras</span></td>
+                    <td>Cuánto tardás VOS en pagarle a los proveedores que te traen la mercadería.</td>
+                    <td><span class="emoji">🙈</span> Los días que te hacés la distraída antes de pagarle los limones al verdulero.</td>
+                </tr>
+
+                <tr><td colspan="4" class="category-row">⛓️ 3. Índices de Endeudamiento (U3)</td></tr>
+                <tr>
+                    <td><b>Endeud. sobre Patrimonio</b></td>
+                    <td><span class="formula-text">Pasivo Total / Patrimonio Neto</span></td>
+                    <td>Compara cuánta plata de terceros usás versus la plata que pusiste vos.</td>
+                    <td><span class="emoji">🚲</span> ¿Compraste la bici con tus ahorros o con la plata que te prestó la abuela?</td>
+                </tr>
+                <tr>
+                    <td><b>Cobertura de Intereses</b></td>
+                    <td><span class="formula-text">EBIT / Intereses</span></td>
+                    <td>Evalúa si la plata que entra alcanza para pagar los intereses al banco.</td>
+                    <td><span class="emoji">😅</span> Si ganás 3 monedas por vender, y el banco te cobra 1 de interés. ¡Safaste!</td>
+                </tr>
+
+                <tr><td colspan="4" class="category-row">🚀 4. Índices de Rentabilidad (U3)</td></tr>
+                <tr>
+                    <td><b>ROA (Rentabilidad Activo)</b></td>
+                    <td><span class="formula-text">Beneficio Neto / Activos Totales</span></td>
+                    <td>Eficiencia con la que usás TODAS tus cosas para ganar plata.</td>
+                    <td><span class="emoji">🏭</span> Por cada juguete que tenés en el cuarto, ¿cuántos caramelos lograste ganar alquilándolos?</td>
+                </tr>
+                <tr>
+                    <td><b>Identidad DuPont (ROE)</b></td>
+                    <td><span class="formula-text">(Utilidad / Ventas) * (Ventas / Activo) * (Activo / Patrimonio)</span></td>
+                    <td>Desarma el ROE para ver si ganás por vender caro, vender rápido o pedir prestado.</td>
+                    <td><span class="emoji">🔍</span> Un rayo láser para ver exactamente por qué sos la reina del kiosco de la cuadra.</td>
+                </tr>
+
+                <tr><td colspan="4" class="category-row">🌊 5. Flujos de Efectivo Reales (U4)</td></tr>
+                <tr>
+                    <td><b>Cash Flow Operativo (CFO)</b></td>
+                    <td><span class="formula-text">EBIT + Depreciación - Impuestos - Var. Cap. Trabajo</span></td>
+                    <td>La plata física que generó el negocio solo por funcionar.</td>
+                    <td><span class="emoji">🍋</span> Los billetes que sacás de la caja después de vender jugo, sumando lo que el contador restó de "mentira" y pagando a la AFIP.</td>
+                </tr>
+                <tr>
+                    <td><b>Free Cash Flow (FCF)</b></td>
+                    <td><span class="formula-text">CFO - Inversiones (CAPEX)</span></td>
+                    <td>La plata libre que queda después de pagar operaciones y comprar bienes de uso.</td>
+                    <td><span class="emoji">✨</span> La plata que te sobra para hacer lo que quieras DESPUÉS de haber comprado la licuadora nueva para el local.</td>
+                </tr>
+                <tr>
+                    <td><b>Cash Flow del Accionista</b></td>
+                    <td><span class="formula-text">FCF - Intereses + Ahorro Fiscal + Nueva Deuda - Pago Deuda</span></td>
+                    <td>Lo que literalmente se pueden llevar los dueños al bolsillo tras arreglar con el banco.</td>
+                    <td><span class="emoji">🤑</span> La ganancia pura que te llevás a tu casa después de pagarle la cuota al matón de la escuela.</td>
+                </tr>
+
+                <tr><td colspan="4" class="category-row">⏳ 6. Valor Tiempo del Dinero (Cap 5)</td></tr>
+                <tr>
+                    <td><b>Valor Futuro (VF)</b></td>
+                    <td><span class="formula-text">Capital * (1 + tasa)^años</span></td>
+                    <td>Cuánto crecerá un ahorro de hoy gracias al interés compuesto.</td>
+                    <td><span class="emoji">🌱</span> Enterrás 10 caramelos hoy y el banco le pone fertilizante. ¿Cuántos tenés a los 18 años?</td>
+                </tr>
+                <tr>
+                    <td><b>Valor Presente (VP)</b></td>
+                    <td><span class="formula-text">Monto Futuro / (1 + tasa)^años</span></td>
+                    <td>Cuánto vale HOY una plata que te prometen para el futuro.</td>
+                    <td><span class="emoji">🎄</span> Te prometen 100 pesos para la próxima Navidad. ¿Cuántos alfajores vale esa promesa el día de hoy?</td>
+                </tr>
+                <tr>
+                    <td><b>Renta Perpetua</b></td>
+                    <td><span class="formula-text">Mensualidad Deseada / Tasa</span></td>
+                    <td>La plata que tenés que invertir hoy para cobrar una cuota para siempre.</td>
+                    <td><span class="emoji">🏖️</span> Cuánta plata guardar en un cofre mágico para que te escupa 10 monedas por mes sin trabajar nunca más.</td>
+                </tr>
+
+                <tr><td colspan="4" class="category-row">💎 7. Valuación y Mercado (Cap 6)</td></tr>
+                <tr>
+                    <td><b>Valuación de Acción (Gordon)</b></td>
+                    <td><span class="formula-text">Dividendo Próximo / (Rendimiento - Crecimiento)</span></td>
+                    <td>El precio justo a pagar por una acción que da dividendos crecientes para siempre.</td>
+                    <td><span class="emoji">🌳</span> ¿Cuánta plata pagarías por el arbolito de tu amigo sabiendo que te va a dar manzanas cada vez más grandes de por vida?</td>
+                </tr>
+                <tr>
+                    <td><b>Price Earning Ratio (PER)</b></td>
+                    <td><span class="formula-text">Precio de la acción / Ganancia por acción (EPS)</span></td>
+                    <td>Cuántos años de ganancias está pagando el mercado por tu acción.</td>
+                    <td><span class="emoji">⏱️</span> Tu puesto genera 1 peso al año, pero te lo compran a 12 (están dispuestos a esperar 12 años para recuperar la plata).</td>
+                </tr>
+
+                <tr><td colspan="4" class="category-row">🛹 8. Riesgo y Rendimiento (Cap 7)</td></tr>
+                <tr>
+                    <td><b>Rendimiento de Cartera</b></td>
+                    <td><span class="formula-text">(Rendimiento A * Peso A) + (Rendimiento B * Peso B)</span></td>
+                    <td>El promedio de ganancia si mezclás dos inversiones distintas.</td>
+                    <td><span class="emoji">🧺</span> Juntar tus alfajores seguros con los chupetines raros de tu hermano para ver cuánto ganan juntos sin pelear.</td>
+                </tr>
+                <tr>
+                    <td><b>Modelo CAPM (Costo Capital)</b></td>
+                    <td><span class="formula-text">Tasa s/Riesgo + Beta * (Rendimiento Mercado - Tasa s/Riesgo)</span></td>
+                    <td>El rendimiento exacto que deberías exigirle a una inversión en base a su nivel de riesgo.</td>
+                    <td><span class="emoji">🦖</span> Si el tobogán de la plaza es gigante y peligroso (Beta alto), vas a exigir que te den más golosinas de premio por tirarte.</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
